@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
-var bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: false }))
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -16,7 +17,7 @@ app.get('/', function(request, response) {
 });
 
 app.post('/weather', function (request, response) {
-	response.send(response.body.text);
+	response.send(request.body.text);
 })
 
 app.listen(app.get('port'), function() {
