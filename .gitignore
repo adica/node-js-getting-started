@@ -4,4 +4,3 @@ Dockerfile
 docker-compose.yml
 api-key
 weather/api-key
-weather/data
