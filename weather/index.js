@@ -1,4 +1,4 @@
-const fs = require('fs');
+/*const fs = require('fs');
 const path = require('path');
 const api = require('./client-api.js');
 const cities = {};
@@ -28,3 +28,4 @@ exports.getWeather = function(city) {
         return console.log('City not provided');
     }
 };
+*/
